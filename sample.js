@@ -122,3 +122,70 @@ function addVariables(variable1, varable2)
 }
 
 console.log("The sum of 2 & 3 is: "+addVariables(2,3))
+
+function mergeStrings(string1, string2)
+{
+	return string1+" "+string2
+}
+
+console.log("Merged string for 2 strings is: ",mergeStrings("Divyansh", "Chouhan"))
+
+class Student
+{
+	name
+	rollNo
+	Id
+	phoneNumber
+	address
+
+	constructor(name, rollNo, Id, phoneNumber, address)
+	{
+		this.name = name
+		this.rollNo = rollNo
+		this.Id = Id
+		this.phoneNumber = phoneNumber
+		this.address = address
+	}
+}
+
+let st = new Student()
+console.log(st)
+st.name = "Nikita"
+st.rollNo = 102
+st.Id = 112
+st.phoneNumber = 9876543210
+st.address = "Address line comes here"
+console.log(st)
+console.log("Name of student is: "+st.name)
+
+let st1 = new Student("Aditya Soni", 103, 113, 987654345, "Address comes here")
+console.log(st1)
+
+let st2 = new Student("Aditya Gupta")
+console.log(st2)
+
+st2.ssiId = 111
+console.log(st2.ssiId)
+console.log(st)
+console.log(st1)
+console.log(st2)
+
+let student = {}
+console.log(student)
+
+student.name = "abc"
+student.rollNo = 199
+student.Id = 190
+student.phoneNumber = 7898767876
+student.address = "gfhfhi"
+student.getName = function()
+{
+	console.log("This is samle")
+}
+
+console.log(student)
+console.log(student.getName())
+
+(function (){
+	console.log("Hello there")
+})()
