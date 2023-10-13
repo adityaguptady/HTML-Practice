@@ -88,8 +88,10 @@ for(var conditionCheck = 0; conditionCheck<=3; conditionCheck++)
 {
 	for(var tempconditionCheck = 0 ; tempconditionCheck<=conditionCheck; tempconditionCheck++)
 	{
-		console.log("*")
+		process.stdout.write("*")
+		//
 	}
+	console.log()
 }
 var conditionCheck = 0
 while(conditionCheck<=3)
@@ -186,6 +188,6 @@ student.getName = function()
 console.log(student)
 console.log(student.getName())
 
-(function (){
-	console.log("Hello there")
-})()
+// (function (){
+// 	console.log("Hello there")
+// })()
