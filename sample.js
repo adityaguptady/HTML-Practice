@@ -140,9 +140,9 @@ class Student
 	phoneNumber
 	address
 
-	constructor(name, rollNo, Id, phoneNumber, address)
+	constructor(studentsName, rollNo, Id, phoneNumber, address)
 	{
-		this.name = name
+		this.name = studentsName
 		this.rollNo = rollNo
 		this.Id = Id
 		this.phoneNumber = phoneNumber
