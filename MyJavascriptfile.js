@@ -62,5 +62,40 @@ console.log("------------------String functions------------------")
 var myStringVariable = "Abcdefghijkl"
 var length = myStringVariable.length
 console.log("Length of the sting is: "+length)
+
 let myArrayVar = myStringVariable.split("f")
 console.log(myArrayVar[1])
+
+var myStringVariable2 = "My Name is Aditya Gupta"
+let myArrayVar2 = myStringVariable2.split(" ")
+console.log(myArrayVar2)
+
+console.log("charAt(8): "+myStringVariable2.charAt(8))
+console.log("replace('a', 'Z'): "+myStringVariable2.replace('a', 'Z'))
+console.log("replaceAll(\"Name\", \"Star\"): "+myStringVariable2.replaceAll("Name", "Star"))
+console.log("substring(4, 8): "+myStringVariable2.substring(4, 8))
+console.log("startsWith(\"My\"): "+myStringVariable2.startsWith("My"))
+console.log("endsWith(\"ta\"): "+myStringVariable2.endsWith("ta"))
+
+var myNumbers = [11, 22, 11, 44, 55, 11, 77]
+console.log("My Array is: "+myNumbers)
+console.log(myNumbers)
+
+console.log("my New array with push is: "+myNumbers.push(88))
+console.log(myNumbers)
+
+console.log("my New array with pop is: "+myNumbers.pop())
+console.log(myNumbers)
+
+
+console.log("my New array with lastIndexOf is: "+myNumbers.lastIndexOf(11))
+//console.log(myNumbers)
+
+console.log("my New array with entries is: "+myNumbers.entries())
+console.log(myNumbers.entries())
+
+
+
+
+
+
