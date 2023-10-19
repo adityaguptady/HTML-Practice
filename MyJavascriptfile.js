@@ -94,8 +94,76 @@ console.log("my New array with lastIndexOf is: "+myNumbers.lastIndexOf(11))
 console.log("my New array with entries is: "+myNumbers.entries())
 console.log(myNumbers.entries())
 
+//find method for Array
+let myArryavar3 = ["Mercury", "Venus", "Earth", "Mars"]
+console.log(myArryavar3)
+let found = myArryavar3.find(element=>
+{
+	return element.includes('s')
+})
+console.log("result after finding element including s character: "+found)
 
+let myarr = ["Mercury","Venus","Earth","Mars"]; 
+let filtered = myarr.filter(val=>
+{
+	if(val.length <= 4)
+		return true
+	else
+		return false
+	//return ;
+}) 
+console.log(filtered);
 
+let numberArray = [1, 2, 3, 4, 5]
+console.log(numberArray);
+let newNumberArray = numberArray.map(val=>
+{
+	return val+1;
+})
+console.log(newNumberArray);
 
+let numberArray2 = ["ABC", "DEFG", "HIJKL", "MNOPQR"]
+console.log(numberArray2);
+let newNumberArray2 = numberArray2.map(val=>
+{
+	if(val.length >=4)
+	{
+		return val+"ed"
+	}
+	else
+	{
+		return val
+	}
+})
+console.log(newNumberArray2);
+
+console.log(numberArray2.concat(numberArray))
+
+//Maps
+var myMap1 = new Map()
+console.log("---------------Map------------")
+console.log(myMap1)
+myMap1.set(1, "One")
+myMap1.set(2, "Two")
+myMap1.set(3, "Three")
+myMap1.set(4, "Four")
+myMap1.set(5, "Five")
+console.log(myMap1)
+console.log("getting 2 keyed value from map")
+console.log(myMap1.get(2))
+
+console.log("Getting all the keys from Map")
+console.log(myMap1.keys())
+
+console.log("Getting all the values from Map")
+console.log(myMap1.values())
+
+console.log("Calling has from map")
+console.log(myMap1.has(2))
+console.log(myMap1.has(6))
+
+console.log("Deleting 4 from map")
+console.log(myMap1.delete(4))
+console.log(myMap1)
 
 
