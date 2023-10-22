@@ -166,4 +166,7 @@ console.log("Deleting 4 from map")
 console.log(myMap1.delete(4))
 console.log(myMap1)
 
-
+let myDate = new Date()
+//YYYY-MM-DDTHH:mm:ss.sssZ - ISO formate od date
+console.log(myDate.toUTCString())
+console.log(myDate.toUTCString())

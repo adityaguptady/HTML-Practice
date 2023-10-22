@@ -15,13 +15,13 @@
         <div class="mainContainer">
             <!-- Username -->
             <label for="username">Your username</label>
-            <input type="text" placeholder="Enter Username" name="username" required>
+            <input type="text" placeholder="Enter Username" name="username" >
 
             <br><br>
 
             <!-- Password -->
             <label for="pswrd">Your password</label>
-            <input type="password" placeholder="Enter Password" name="pswrd" required>
+            <input type="password" placeholder="Enter Password" name="pswrd" >
 
             <!-- sub container for the checkbox and forgot password link -->
             <div class="subcontainer">
@@ -39,7 +39,12 @@
             <p class="register">Not a member?  <a href="#">Register here!</a></p>
         </div>
     </form>
-</body>
-</html>
   </body>
+  <script type="text/javascript">
+    function handleSubmit(event) 
+    {
+      event.preventDefault();
+      console.log("Submitted the form!!!")
+    }
+  </script>
 </html>
