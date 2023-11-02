@@ -1,0 +1,27 @@
+p
+{
+	color: blueviolet;
+	background-color: #046D75;
+	font-size: 100%;
+	/*height: 500px;
+	width: 500px;*/
+	border: 1px solid #FFFFFF;
+	background-image: url(../userImage.png);
+	border-radius: 50px;
+	/*padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;*/
+	padding: 30px;
+/*	margin: 30px;*/
+
+}
+/*styling for heading tag*/
+h1
+{
+	color: blue;
+}
+body
+{
+	background-color: #FAB288;
+}

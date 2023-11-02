@@ -106,6 +106,15 @@ console.log(myStudent)
 var myStudent2 = new Student("Ayush", "My address", 12, 987656789)
 console.log(myStudent2)
 
+let student = {
+	name: "Aditya",
+	Age: 20,
+	Email: "abc@gmail.com"
+}
+console.log(student)
+console.log(student.name)
+student.address = "My address comes here"
+console.log(student.address)
 
 
 

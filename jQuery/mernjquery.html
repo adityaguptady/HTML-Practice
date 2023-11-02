@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<script src="jquery-3.7.1.js"></script>
+	</head>
+	<body>
+		<button id="testButton" class="testButtonClass">Test</button>
+		<p id="testText" class="testTextClass">Test text</p>
+		<p id="testText" class="testTextClass1">Test text 1</p>
+		<p id="testText" class="testTextClass2">Test text 2</p>
+		<p id="testText" class="testTextClass3">Test text 3</p>
+		<p id="testText" class="testTextClass4">Test text 4</p>
+		<p id="testText" class="testTextClass5">Test text 5</p>
+		<p id="testText" class="testTextClass6">Test text 6</p>
+		<p id="testText" class="testTextClass7">Test text 7</p>
+		<p id="testText" class="testTextClass8">Test text 8</p>
+		<ul>
+			<li>
+				<h4>This is heading 1</h4>
+				<p>this is Paragraph 1</p>
+				<div>this is the content of the section 1</div>
+				<p>this is footer of the list item 1</p>
+			</li>
+			<li>
+				<h4>This is heading</h4>
+				<p>this is Paragraph</p>
+				<div>this is the content of the section</div>
+				<p>this is footer of the list item</p>
+			</li>
+			<li>
+				<h4>This is heading</h4>
+				<p>this is Paragraph</p>
+				<div>this is the content of the section</div>
+				<p>this is footer of the list item</p>
+			</li>
+			<li>
+				<h4>This is heading</h4>
+				<p>this is Paragraph</p>
+				<div>this is the content of the section</div>
+				<p>this is footer of the list item</p>
+			</li>
+			<li>
+				<h4>This is heading</h4>
+				<p>this is Paragraph</p>
+				<div>this is the content of the section</div>
+				<p>this is footer of the list item</p>
+			</li>
+		</ul>
+	</body>
+	<script>
+		$(document).ready(function()
+		{
+			$(".testButtonClass").click(function()
+			{
+				$("p:first").hide();
+				$("ul li:first").hide()
+			})
+		})
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- <html>
+	<head>
+		<script src="jquery-3.7.1.js"></script>
+	</head>
+	<body>
+		<button id="myButton" class="myButtonClass">Test button</button>
+		<p>This is my test text</p>
+	</body>
+	<script>
+		$(document).ready(function()
+		{
+			$(".myButtonClass").click(function()
+			{
+				$(this).hide();
+			})
+		});
+	</script>
+</html> -->

@@ -1,0 +1,21 @@
+<html>
+	<input type="text" placeholder="Enter Name" id="input">
+	<button onclick="handlclick()">Click me</button>
+
+<script>
+	function handlclick()
+	{
+		let inputText = document.getElementById("input").value
+		console.log("inputText: "+inputText)
+		if(inputText.length < 4)
+		{
+			alert("Input should be more than 4 characters!!!")
+		}
+		else
+		{
+			console.log("Success!!!!")
+		}
+	}
+</script>
+
+</html>
