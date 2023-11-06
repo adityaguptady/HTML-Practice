@@ -6,15 +6,36 @@
 		<button>Test button</button>
 		<p id="myID" class="myClass">This is my test text</p>
 		<input type="text" name="input" placeholder="This is input">
-		<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
-		<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
-		<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+		<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+		<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+		<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
 		<div id="flip">Click to slide down panel</div>
 		<div id="panel">Hello world!</div>
 		<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
 	</body>
 	<script>
-		
+		$("button").click(function()
+		{
+			// if($("#div1").is(":visible"))
+			// {
+			// 	$("#div1").fadeOut();
+	  		// 	$("#div2").fadeOut("slow");
+	  		// 	$("#div3").fadeOut(6000);
+			// }
+			// else
+			// {
+			// 	$("#div1").fadeIn();
+	  		// 	$("#div2").fadeIn("slow");
+	  		// 	$("#div3").fadeIn(6000);
+			// }
+			// $("#div1").fadeToggle();
+  			// $("#div2").fadeToggle("slow");
+  			// $("#div3").fadeToggle(6000);
+  			$("#div1").fadeTo("slow", 0.10);
+			$("#div2").fadeTo("slow", 0.5);
+			$("#div3").fadeTo("slow", 0.9);
+  		})
+
 		// $(document).ready(function()
 		// {
   		// 	$("button").click(function()
@@ -74,24 +95,24 @@
 		{
   			$(this).css("background-color", "#ffffff");
 		});
-		$("button").click(function()
-		{
+		// $("button").click(function()
+		// {
 			// $("#div1").fadeIn();
   			// $("#div2").fadeIn("slow");
   			// $("#div3").fadeIn(6000);
   			//$("p").toggle();
-  			if($("#div1").is(':visible'))
-  			{
-  				$("#div1").fadeOut();
-				$("#div2").fadeOut("slow");
-				$("#div3").fadeOut(3000);
-  			}
-  			else
-  			{
-  				$("#div1").fadeIn();
-	  			$("#div2").fadeIn("slow");
-	  			$("#div3").fadeIn(3000);	
-  			}
+  			// if($("#div1").is(':visible'))
+  			// {
+  			// 	$("#div1").fadeOut();
+			// 	$("#div2").fadeOut("slow");
+			// 	$("#div3").fadeOut(3000);
+  			// }
+  			// else
+  			// {
+  			// 	$("#div1").fadeIn();
+	  		// 	$("#div2").fadeIn("slow");
+	  		// 	$("#div3").fadeIn(3000);	
+  			// }
   			// $("#div1").fadeToggle();
 			// $("#div2").fadeToggle("slow");
 			// $("#div3").fadeToggle(3000);
@@ -99,7 +120,7 @@
 			// $("#div2").fadeTo("slow", 0.4);
 			// $("#div3").fadeTo("slow", 0.7);
   			
-		});
+		//});
 		// $(document).ready(function()
 		// {
 		// 	$("button").click(function()
@@ -115,13 +136,13 @@
 			{
 				if($("#panel").is(':visible'))
 				{
-					$("#panel").slideUp();
-					$("div").animate({right: '500px'});
+					//$("#panel").slideUp();
+					$("div").animate({right: '100px'});
 				}
 				else
 				{
-					$("#panel").slideDown("slow");
-					$("div").animate({left: '500px'});
+					//$("#panel").slideDown("slow");
+					$("div").animate({left: '100px'});
 				}
 				//$("#panel").slideToggle();
 				
